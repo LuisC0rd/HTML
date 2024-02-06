@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Formulario</title>
+</head>
+
+</html>
+
+<body>
+    <h1>Trabalhando com formularios</h1>
+    <hr>
+    <p>elementos para formulários são voltadas à interação com o usuario. Entrada de dados, seleção de
+        opções,processamento para a manipulação de dados entre outros.</p>
+    <p>Formulários em html são somente um <b>Interface</b></p>
+    <p>Para que o formulário funcione, é necessário combina-lo com uma <b>Linguagem de programação.</b></p>
+
+    <h2>Exemplos:</h2>
+    <form action="#" method="post">
+        <!--required -> campo obrigatório-->
+        <P>
+            <label for="Nome">Nome</label>
+            <input required type="text" id="nome" name="nome">
+        </P>
+    </form>
+    <form>
+        <p>
+            <label for="mail">Email</label>
+            <input required type="email" id="email" name="email">
+        <p>
+            <label for="Telefone">Telefone:</label>
+            <input required type="tel" id="Telefone" placeholder="Celular (00) 000000">
+            <!--placeholder -> deixa como se fosse uma máscara dentro do input, para auxiliar o usuário de como preencher o campo-->
+        </p>
+    </form>
+    <P>Como você se identifica:</P>
+    <p>
+        <input type="radio" id="Masculino" name="Masculino">
+        <label for="Masculino">Masculino</label>
+
+        <input type="radio" id="Masculino" name="Masculino">
+        <label for="Feminino">Feminino</label>
+        <!--Neste caso o name dever ser o mesmo para os dois inputs-->
+    </p>
+    <p>Interesses:</p>
+    <input type="checkbox" id="html5" name="interesses">
+    <label for="html5">CSS</label>
+
+    <input type="checkbox" id="html5" name="interesses">
+    <label for="html5">Javascrit</label>
+
+    <input type="checkbox" id="html5" name="interesses">
+    <label for="html5">Html</label>
+    </p>
+
+    <p>
+        <label>Data de nascimento</label>
+        <input type="date" id="data de nascimento">
+    </p>
+
+    <p>
+        <label for="cor"> Qual a sua cor favorita?</label>
+        <input type="color" id="cor" name="cor">
+    </p>
+    <p>
+        <label for="idade">Quantos anos você tem?</label>
+        <input type="number" name="idade" id="idade">
+    </p>
+    <p>
+        <label for="assunto">Assunto:</label>
+        <select name="assunto" id="assunto">
+            <option value=""></option>
+            <option>Elogios</option>
+            <option>Reclamações</option>
+            <option>Outros</option>
+        </select>
+    </p>
+    <p>
+        <label for="Mensagem">Mensagem:</label>
+        <textarea name="mensagem" id="Mensagem" cols="20" rows="5"></textarea>
+    </p>
+    <p>
+        <button>Enviar</button>
+    </p>
+
+</body>
+
+</html>
