@@ -1,8 +1,40 @@
-
-    img{
-        width: 200px;
-    }
-    td{
-        font-family: sans-serif;
-        text-align: center;
-    }
+body {
+    /*max-width: 720px; (caso queira centralizar a página)*/
+    margin: auto;;
+    margin: 30px;;
+}
+p{
+    text-align: justify;
+    width: 700px;;
+    font-family: verdana, arial, sans-serif;;
+    padding: 5px;
+}
+img {
+    width: 200px;
+    border-radius: 5px;;
+}
+td {
+    font-family: sans-serif;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    background-color: greenyellow;
+    border-radius: 20px;
+}
+*b{
+    color: red;
+}
+*i{
+    color: purple;
+}
+table {
+    background-color: #081e34;
+    border-radius: 10px;
+    border-spacing: 15px;;
+}
+td {
+    color: white;
+    font-family: sans-serif;;
+    text-align: center;;
+}
