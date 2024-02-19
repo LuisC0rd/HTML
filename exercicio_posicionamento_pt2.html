@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta title="exercicio posicionamento2">
+    <title>Exercicio Formulário</title>
+    <style>
+        body {
+            background-color: #000;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #qb {
+            position: relative;
+            background-color: white;
+            left: 200px;
+            top: 30px;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            width: 1500px;
+            height: 900px;
+        }
+
+        .qd {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin-top: -40px;
+            margin-left: -40px;
+        }
+
+        #qr {
+
+            width: 350px;
+            height: 350px;
+            background-color: rgb(175, 65, 248);
+        }
+
+        #qa {
+
+            width: 250px;
+            height: 250px;
+            background-color: rgb(255, 123, 0);
+        }
+
+        #qv {
+
+            width: 150px;
+            height: 150px;
+            background-color: rgb(255, 35, 109);
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="qb">
+        <div class="qd" id="qr"> </div>
+        <div class="qd" id="qa"></div>
+        <div class="qd" id="qv"></div>
+    </div>
+
+</body>
+
+</html>
