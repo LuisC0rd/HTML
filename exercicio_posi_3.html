@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Exercicio posicionamento</title>
+    <style>
+
+        body{
+            background-color: rgb(228, 226, 222);
+            font-family: sans-serif;
+            margin: 0 auto;
+            width: 1400px;
+        }
+
+        img{
+            width: 400px;
+            height: 250px;
+        }
+
+        .cfp {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        a{
+            background-color: gray;
+            color: #fff;
+            margin: 4px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+            cursor: pointer;
+            border-radius: 2px;
+            padding: 6px;
+        }
+
+        a:hover{
+            background-color: #000;
+            transform: scaleY(1.2);
+        }
+
+        .cfpc{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .cfpi{
+            width: 400px;
+            height: 400px;
+            text-align: left;  
+            padding: 10px;
+            background-color: #fff;
+            margin: 10px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <h1>Modelo de Página</h1>
+    <hr>
+    <h2>Página de teste</h2>
+    <div class="cfp">
+        <ol>
+        <a class="btn_cfp">Carros</a>
+        <a class="btn_cfp">Pessoas</a>
+        <a class="btn_cfp">Frutas</a>
+    </ol>
+    </div>
+    <div class="cfpc">
+        <div class="cfpi">
+            <img src="imagens/carro-antigo.webp">
+            <h3>Carros Antigos</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo impedit maiores eaque facere accusantium dolorem ullam quae voluptatibus fugit minus ab ducimus expedita est incidunt unde, corrupti ea in commodi.</p>
+        </div>
+
+        <div class="cfpi">
+            <img src="imagens/carroNovo.jpg">
+            <h3>Carros Novos</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo impedit maiores eaque facere accusantium dolorem ullam quae voluptatibus fugit minus ab ducimus expedita est incidunt unde, corrupti ea in commodi.</p>
+        </div>
+
+        <div class="cfpi">
+            <img src="imagens/populares.jpg">
+            <h3>Carros Populares</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo impedit maiores eaque facere accusantium dolorem ullam quae voluptatibus fugit minus ab ducimus expedita est incidunt unde, corrupti ea in commodi.</p>
+        </div>
+    </div>
+
+    <div class="cfpc">
+        <div class="cfpi">
+            <img src="imagens/citricas.png">
+            <h3>Frutas Citricas</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo impedit maiores eaque facere accusantium dolorem ullam quae voluptatibus fugit minus ab ducimus expedita est incidunt unde, corrupti ea in commodi.</p>
+        </div>
+
+        <div class="cfpi">
+            <img src="imagens/frutas-vermelhas.png">
+            <h3>Frutas Vermelhas</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo impedit maiores eaque facere accusantium dolorem ullam quae voluptatibus fugit minus ab ducimus expedita est incidunt unde, corrupti ea in commodi.</p>
+        </div>
+
+        <div class="cfpi">
+            <img src="imagens/verdes.jpg">
+            <h3>Frutas verdes</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo impedit maiores eaque facere accusantium dolorem ullam quae voluptatibus fugit minus ab ducimus expedita est incidunt unde, corrupti ea in commodi.</p>
+        </div>
+    </div>
+
+    <div class="cfpc">
+        <div class="cfpi">
+            <img src="imagens/adultos.jpg">
+            <h3>Adultos</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo impedit maiores eaque facere accusantium dolorem ullam quae voluptatibus fugit minus ab ducimus expedita est incidunt unde, corrupti ea in commodi.</p>
+        </div>
+
+        <div class="cfpi">
+            <img src="imagens/crianca.png">
+            <h3>crianças</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo impedit maiores eaque facere accusantium dolorem ullam quae voluptatibus fugit minus ab ducimus expedita est incidunt unde, corrupti ea in commodi.</p>
+        </div>
+
+        <div class="cfpi">
+            <img src="imagens/verdes.jpg">
+            <h3>Idosos</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo impedit maiores eaque facere accusantium dolorem ullam quae voluptatibus fugit minus ab ducimus expedita est incidunt unde, corrupti ea in commodi.</p>
+        </div>
+    </div>
+</body>
+</html>
