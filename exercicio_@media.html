@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, imitial-scale=1.0">
+    <title>Exercicio @media</title>
+    <style>
+        body{
+            background-color:darkcyan;
+        }
+
+        p{
+            font-size: 20px;
+        }
+
+        h1{
+            font-family: sans-serif;
+        }
+
+        /*@media screen and (min-width: 320px){
+            body{
+                background-color:coral;
+            }
+        }
+
+        @media screen and (min-width: 720px){
+            body{
+                background-color: blanchedalmond;
+            }
+        }
+
+        @media screen and (min-width: 1400px){
+            body{
+                background-color:brown;
+            }
+        }*/
+
+        @media screen and (max-width: 1400px){
+            body{
+                background-color:brown;
+            }
+        }
+
+        @media screen and (max-width: 720px){
+            body{
+                background-color: blanchedalmond;
+            }
+        }
+
+        @media screen and (max-width: 320px){
+            body{
+                background-color:coral;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p>Renderizando as paginas em mídia query.</p>
+    <h1>Os breakpoins serão os seguintes: 320px, 720px, 1400px.</h1>
+</body>
+</html>

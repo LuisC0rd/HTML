@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, imitial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        body{
+            background-color: pink;
+        }
+
+        .tudo{
+            overflow: auto;
+        }
+
+        #texto{
+            margin-left: 4px;
+        }
+
+        #list{
+            float: none;
+            width: auto;
+        }
+        #menulist{
+            margin: 0;
+            padding: 0;
+        }
+        .menuitem{
+            background-color: #CDF0F6;
+            border: solid 1px #d4d4d4;
+            border-radius: 4px;
+            list-style-type: none;
+            margin: 4px;
+            padding: 2px;
+            text-align: center;
+        }
+
+        .topnav{
+            overflow: hidden;
+            background-color: #333;
+
+        }
+
+        .topnav a{
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            text-decoration: none;
+            padding: 14px 16px;
+        }
+        .topnav a:hover{
+            background-color: #ddd;
+            color: #000;
+        }
+
+        @media screen and (min-width:480px) {
+            /*Se for maior que 480...tenha esse comportamento:
+            Ao usar o max-width a estratégia é ao contrario, ou seja, de 480 para baixo.*/
+            body{
+                background-color: lightgreen;
+            }
+            #list{
+                width: 200px;
+                float: left;
+            }
+        }
+         
+        @media screen and (max-width: 600px){
+            .topnav a{
+                float: none;
+                width: 100%;
+            }
+        }    
+    </style>
+</head>
+
+<body>
+    <h1>@Media</h1>
+    <p>Regra, introduza em CSS2, possibilitou definir regras de estilo diferentes para diferentes tipos de mídia.</p>
+    <p>As consultas de mídia podem ser usadas para verificar muitas coisas, como:</p>
+    <ul>
+        <li>Larguras e altura e viewport.</li>
+        <li>Orientação de viwport.(passagem ou retrato)</li>
+        <li>Resolução.</li>
+    </ul>
+    <p>Usando consultas de mídia32 são técnica popular para oferecer um estilo personalizado Folha paara desktop,
+        tablets e smartphones:</p>
+    <p>Exemplos:</p>
+    <div class="tudo">
+        <div id="list">
+            <ul id="menulist">
+                <li class="menuitem">Conteúdo 1</li>
+                <li class="menuitem">Conteúdo 2</li>
+                <li class="menuitem">Conteúdo 3</li>
+                <li class="menuitem">Conteúdo 4</li>
+                <li class="menuitem">Conteúdo 5</li>
+            </ul>
+        </div>
+
+        <div id="texto">
+            <h1>Conteúdo de quebra</h1>
+            <p>Quando determinamos as medidas em pixel das orientações de páginas, estamos falando dos chamados
+                "breakpoints."</p>
+        </div>
+    </div>
+    <p>MENUS</p>
+    <div class="topnav">
+        <a href="#">HOME</a>
+        <a href="#">MENU</a>
+        <a href="#">CONTATO</a>
+    </div>
+</body>
+
+</html>
