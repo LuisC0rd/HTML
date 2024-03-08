@@ -5,6 +5,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Outfit', sans-serif;
+    text-decoration: none;
+    list-style: none;
 }
 
 
@@ -96,4 +98,215 @@ form input[type=submit]{
     color: #fff;
     font-size: 14pt;
     cursor: pointer;
+}
+
+.backgrond{
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+}
+.backgrond{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    position: fixed;
+    transition: all .35s ease;
+    background-color: #fff;
+    padding: 14px 14%;
+}
+
+.cabeçalho-link{
+    display: flex;
+    gap: 3rem;
+}
+
+.cabeçalho-link a{
+    color: #111;
+    font-weight: 700;
+    transition: 0.3;
+}
+
+.cabeçalho-link a:hover{
+    color: #713CA7;
+}
+
+.section{
+    padding-top: 7rem;
+}
+
+section h1{
+    align-items: center;
+    text-align: left;
+    font-size: 2rem;
+}
+
+.container-bffc{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 2rem;
+}
+
+.cards img{
+    width: 480px;
+    height: auto;
+    transition: 0.35 ease;
+    border-radius: 10px;
+}
+
+.cards img:hover{
+    transform: scale(0.9) translateY(11px);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cta{
+    background: url(material_visual/painelcj.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.text-cta{
+    padding-left: 17px;
+}
+
+.text-cta h4{
+    font-size: 3.3rem;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.text-cta a{
+    background-color: #FFBF00;
+    padding: 1rem 3rem 1rem 3rem;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3;
+}
+
+.text-cta a:hover{
+    background-color: #111;
+    transform: scaleY(1.2);
+}
+
+.container-roupasnike{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.container-roupasnike img:hover{
+    transform: scale(0.9) translateY(4px);
+    cursor: pointer;
+    transition: 0.3s
+}
+
+#colin{
+    border-radius: 10px;
+    transform: none;
+    transition: none;
+}
+.container-roupasnike s{
+    color: #9E9E9E;
+}
+
+.roupanike{
+    background-color: #713CA7;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.marcas{
+    margin-top: 10rem;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+}
+
+.marcas img{
+    width: 180px;
+    height: auto;
+}
+
+.rodapé{
+    display: flex;
+    gap: 4rem;
+    justify-content: space-around;
+    background: url(material_visual/sketch-1707962381919.png);
+    padding: 8rem;
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax (200px, auto));
+}
+
+.contato{
+    color: #fff;
+    font-size: 23px;
+    margin-bottom: 1.6rem;
+}
+
+.contato h1{
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.contato li a{
+    display: block;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.35s ease;
+}
+
+.container-saibamais{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.container-saibamais img{
+    border-radius: 10px;
+}
+
+.ccsb{
+    background-color: #111;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.container-saibamais a{
+    background-color: #fff;
+    padding: 4px;
+    border-radius: 6px;
+    color: #000;
+    cursor: pointer;
+    transition: 0.3;
+}
+
+h1{
+    margin: 20px;
 }
