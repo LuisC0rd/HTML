@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio1 js</title>
+</head>
+<body>
+    <h1>Alertas</h1>
+    <script>
+        var nome = window.prompt('Qual o seu nome?');
+        var idade = Number (window.prompt('Qual é sua idade?'));
+        var parente = window.prompt('Qual o nome do seu familiar mais próximo?');
+        var idadeParente = Number (window.prompt('Qual a idade desse parente?'));
+        var data = new Date();
+        var data = data.toLocaleDateString();
+        var idadesomada = Number(idade + idadeParente)
+
+        document.write("<p>Nome é:"+nome+".<br>Minha idade é:"+idade+".<br>O nome do meu familiar mais próximo é:"+parente+"<br>Sua idade é:"+idadeParente+"<br>Data de inscrição:"+data+"</p>")
+        document.write("<p>"+idadesomada+"</p>")
+    </script>
+</body>
+</html>

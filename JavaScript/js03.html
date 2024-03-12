@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando variáveis</title>
+</head>
+<body>
+    <h1>Documento JavaScript</h1>
+    <script>
+        //alert('Funcionou');
+        var curso = "Desenvolvendo Front-end";
+        var nome = "Luis"
+        var data = new Date();
+        var dia = data.getDate();
+        var mes = data.getMonth()+1;
+        var ano = data.getFullYear();
+        var datacompleta = data.toLocaleDateString();
+
+
+        //document.write(ano);
+        //console.log(data);
+        alert(datacompleta)
+        document.write("<p>Me chamo <b>"+nome+"</b>, estudo "+curso+" no SENAC. Hoje é "+datacompleta+".</p>")
+        console.log("Me chamo "+nome+", estudo "+curso+" no SENAC. Hoje é "+datacompleta+".")
+    </script>;
+    
+</body>
+</html>
