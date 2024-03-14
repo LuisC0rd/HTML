@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio3 js</title>
+    <style>
+        #titulo {
+            font-size: 60px;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+
+        #btns{
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        .botao {
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            border-radius: 20px;
+            color: #fff;
+            margin: 4px;
+        }
+
+        #azul {
+            background-color: blue;
+        }
+
+        #verde {
+            background-color: green;
+        }
+
+        #laranja {
+            background-color: orangered;
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <h1 id="titulo">Escolhendo a cor e exibindo o significado</h1>
+    <br>
+    <h1 id="textobtn"></h1>
+    <hr>
+    <div id="btns">
+        <button class="botao" id="azul" onclick="document.body.style.backgroundColor='blue'">Azul</button>
+        <button class="botao" id="verde" onclick="">Verde</button>
+        <button class="botao" id="laranja" onclick="">Laranja</button>
+    </div>
+
+    <script>
+        document.getElementById('textobtn').innerHTML="Azul significa Harmonia e maturidade"
+    </script>
+</body>
+
+</html>
