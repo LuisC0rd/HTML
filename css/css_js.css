@@ -1,0 +1,39 @@
+#titulo {
+    font-size: 60px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+#textobtn{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+#btns{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.botao {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    border-radius: 20px;
+    color: #fff;
+    margin: 4px;
+}
+
+#azul {
+    background-color: blue;
+}
+
+#verde {
+    background-color: green;
+}
+
+#laranja {
+    background-color: orangered;
+}
