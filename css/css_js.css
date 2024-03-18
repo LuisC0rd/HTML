@@ -11,6 +11,10 @@
     color: #fff;
 }
 
+#azul, #verde, #laranja{
+    transition: 2s;
+}
+
 #btns{
     display: flex;
     justify-content: center;
@@ -36,4 +40,4 @@
 
 #laranja {
     background-color: orangered;
-}
+} 

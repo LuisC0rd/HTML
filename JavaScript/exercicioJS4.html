@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com CSS em javascript</title>
+</head>
+
+<body>
+    <h1 >Trabalhando com CSS em javascript</h1>
+    <button>Alterar a cor do titulo</button>
+    <p>Texto com algum tipo de destaque</p>
+    <button>Alterar a cor do paragrafo</button>
+    <p>Texto com muito destaque.</p>
+    <button>Alterar tamanho da fonte</button>
+    <button>Aterar a fonte</button>
+    <hr>
+    <p>Texto desenvolvido por um clique</p>
+    <button onclick="document.getElementById('texto').innerHTML='Texto transformado'">Clique aqui</button>
+    <br>
+    <button>Ligar</button>
+    <button>Ocultar</button>
+    <button>Mostrar</button>
+    <button>Apagar</button>
+    <br>
+    <div id="acesa" class="lampada" onmouseout="apagada()" onmouseenter="ligada()">
+        <img id="ap" src="img/apagada.jpg">
+    </div>
+
+    <script>
+        let lam = window.document.getElementById('id')
+
+        lam.addEventListener('click', clicar)
+
+
+
+        function ap(){
+            acessa.src
+
+        }
+
+        function apagada() {
+            l.innerText = 'Saiu!'
+            l.style.background = 'green'
+            l.style.transition = '2s'
+            l.style.fontSize = '32px'
+            l.style.transitionDelay = '1s'
+        }
+
+
+
+        function clicar() {
+            a.innerText = 'Clicou'
+            a.style.background = 'yellow'
+            a.style.color = 'black'
+        }
+    </script>
+</body>
+
+</html>
