@@ -24,36 +24,23 @@
     <button>Mostrar</button>
     <button>Apagar</button>
     <br>
-    <div id="acesa" class="lampada" onmouseout="apagada()" onmouseenter="ligada()">
-        <img id="ap" src="img/apagada.jpg">
+    <div>
+        <img id="ap" src="img/apagada.jpg" onmouseout="apagada()" onmouseenter="ligada()" onclick="quebrada()">
     </div>
 
     <script>
-        let lam = window.document.getElementById('id')
+        let lam = window.document.getElementById('ap')
 
-        lam.addEventListener('click', clicar)
-
-
-
-        function ap(){
-            acessa.src
-
+        function apagada(){
+            lam.src="img/apagada.jpg"
         }
 
-        function apagada() {
-            l.innerText = 'Saiu!'
-            l.style.background = 'green'
-            l.style.transition = '2s'
-            l.style.fontSize = '32px'
-            l.style.transitionDelay = '1s'
+        function ligada(){
+            lam.src="img/luz.jpg"
         }
 
-
-
-        function clicar() {
-            a.innerText = 'Clicou'
-            a.style.background = 'yellow'
-            a.style.color = 'black'
+        function quebrada(){
+            lam.src="img/quebrada.jpg"
         }
     </script>
 </body>
