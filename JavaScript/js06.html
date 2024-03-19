@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        body {
+            margin: 0 auto;
+            width: 600px;
+            background-color: beige;
+        }
+
+        h1 {
+            position: relative;
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        #cadastro {
+            display: flex;
+            justify-content: center;
+        }
+
+        #btn {
+            position: absolute;
+            display: flex;
+            left: 200;
+        }
+
+        .caixa {
+            margin: 6px;
+        }
+
+        .caixa label{
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        #ficha {
+            margin: 0;
+        }
+
+        .caixaficha label{
+            margin: 80px;
+        }
+
+        .caixaficha input{
+            border: 1px solid;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Cadastrar Colaborador</h1>
+    <section id="container">
+        <div id="cadastro">
+            <div class="caixa">
+                <label>Nome</label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+            <br>
+            <br>
+            <div class="caixa">
+                <label>Idade</label>
+                <input type="number" name="idae" id="idade" required>
+            </div>
+        </div>
+        <div id="cadastro">
+            <div class="caixa">
+                <label>Cargo</label>
+                <input type="text" name="cargo" id="cargo" required>
+            </div>
+            <br>
+            <br>
+            <div class="caixa">
+                <label>Salário</label>
+                <input type="number" name="salario" id="salario" required>
+            </div>
+        </div>
+    </section>
+
+    <button id="btn" class="salvar">
+        Salvar
+    </button>
+
+
+    <h1>Ficha do colaborador</h1>
+    <section id="ficha">
+        <div class="caixaficha">
+            <label>Nome Completo:</label>
+            <input type="text" name="nomef" id="nomef">
+        </div>
+
+        <div class="caixaficha">
+            <label>Idade:</label>
+            <input type="text" name="idadef" id="idadef">
+        </div>
+
+        <div class="caixaficha">
+            <label>Salário:</label>
+            <input type="text" name="salariof" id="salariof">
+        </div>
+
+        <div class="caixaficha">
+            <label>Cargo:</label>
+            <input type="text" name="cargof" id="cargof">
+        </div>
+    </section>
+
+    <script>
+        let salvar = window.document.getElementById('btn');
+
+        salvar.addEventListener('click', function () {
+            let nome = document.getElementById('nome').value;
+            let idade = document.getElementById('idade').value;
+            let cargo = document.getElementById('cargo').value;
+            let salario = document.getElementById('salario').value;
+
+            document.getElementById('nomef').value = nome
+            document.getElementById('idadef').value = idade
+            document.getElementById('salariof').value = salario
+            document.getElementById('cargof').value = cargo
+        })
+    </script>
+</body>
+
+</html>
