@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1,2,3</title>
+</head>
+ 
+<body>
+    <script>
+        var numero = parseFloat(prompt("Digite um número:"));
+        var anterior = numero - 1;
+        var posterior = numero + 1;
+ 
+        alert("Número: " + numero + "\nVizinhos: " + anterior + " e " + posterior);
+ 
+        var total = parseFloat(prompt("Digite o valor total da conta:"));
+        var nClientes = parseInt(prompt("Digite o número de clientes:"));
+        var valorPorCliente = total / numClientes;
+ 
+        alert("Valor da Conta R$: " + total.toFixed(2) + "\nNúmero de Clientes: " + numClientes + "\nValor por cliente R$: " + valorPorCliente.toFixed(2));
+ 
+        var pdp = parseFloat(prompt("Digite o preço do produto:"));
+        var pav = pdp * 0.9;
+        var pp = pdp / 3;
+ 
+        alert("Preço R$: " + pdp.toFixed(2) + "\nÀ Vista R$: " + pav.toFixed(2) + "\nOu 3x de R$: " + pp.toFixed(2));
+ 
+        var n1 = parseFloat(prompt("Digite a 1ª nota:"));
+        var n2 = parseFloat(prompt("Digite a 2ª nota:"));
+        var media = (n1 + n2) / 2;
+ 
+        alert("1ª Nota: " + n1 + "\n2ª Nota: " + n2 + "\nMédia: " + media.toFixed(1));
+    </script>
+</body>
+ 
+</html>
