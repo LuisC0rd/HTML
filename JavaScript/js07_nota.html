@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Estrutura Condicional</h1>
+    </div>
+
+    <script>
+        let nota1 = parseFloat(prompt("Digite a primeira nota: "))
+        let nota2 = parseFloat(prompt("Digite a segunda nota: "))
+        let media = (nota1 + nota2)/2
+
+        document.write("A primeira nota foi: "+nota1.toFixed(2)+"<br>A segunda nota foi: "+nota2.toFixed(2)+"<br>Sendo assim sua media foi: "+media.toFixed(2))
+
+        if(media >= 6){
+            document.write("<br> Aprovado!")
+        }else{
+            document.write("<br> Infelizmente você esta reprovado.")
+        }
+    </script>
+</body>
+</html>
