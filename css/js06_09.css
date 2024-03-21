@@ -1,0 +1,44 @@
+body {
+    margin: 0 auto;
+    width: 600px;
+    background-color: beige;
+}
+
+h1 {
+    position: relative;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#cadastro {
+    display: flex;
+    justify-content: center;
+}
+
+#btn {
+    position: absolute;
+    display: flex;
+    left: 200;
+}
+
+.caixa {
+    margin: 6px;
+}
+
+.caixa label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+#ficha {
+    margin: 0;
+}
+
+.caixaficha label {
+    margin: 80px;
+}
+
+.caixaficha input {
+    border: 1px solid;
+    width: 300px;
+}
