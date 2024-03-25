@@ -13,6 +13,12 @@
         background-color: beige;
     }
 
+    #container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
     #cadastroNotas {
         width: 1220px;
         height: 180px;
@@ -20,7 +26,7 @@
         border-radius: 10px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         background-color: white;
-        position: relative;
+        margin: 10px;
     }
 
     #btn {
@@ -30,6 +36,15 @@
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         background-color: green;
         color: white;
+    }
+
+    #contRelatorio {
+        width: 1220px;
+        height: 180px;
+        padding: 20px;
+        border-radius: 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: white;
     }
 
     .nsmb {
@@ -47,7 +62,14 @@
         margin-bottom: 4px;
         width: 200px;
         height: 25px;
-        
+    }
+
+    .relatório {
+        display: flex;
+        justify-content: space-around;
+        background-color: green;
+        color: white;
+        border-radius: 10px;
     }
 </style>
 
@@ -59,46 +81,46 @@
             <div class="nsmb">
                 <div class="caixaficha">
                     <label>Nome Completo:</label>
-                    <input class="input" type="text" name="nomef" id="nomef">
+                    <input class="input" type="text" id="nome">
                 </div>
 
                 <div class="caixaficha">
                     <label>Série:</label>
-                    <input class="input" type="text" name="serief" id="serief">
+                    <input class="input" type="number" id="serie">
                 </div>
 
                 <div class="caixaficha">
                     <label for="materia">Matéria:</label>
-                    <select class="input" name="assunto" id="assunto">
-                        <option>Matemática</option>
-                        <option>Português</option>
+                    <select class="input" id="materia">
+                        <option value="Matemática">Matemática</option>
+                        <option value="Português">Português</option>
                     </select>
                 </div>
             </div>
             <div class="nsmb">
                 <div class="caixaficha">
                     <label>Bimestre 1</label>
-                    <input class="input" type="number" name="serief" id="bimestre1">
+                    <input class="input" type="number" id="bimestre1">
                 </div>
 
                 <div class="caixaficha">
                     <label>Bimestre 2</label>
-                    <input class="input" type="number" name="serief" id="bimestre2">
+                    <input class="input" type="number" id="bimestre2">
                 </div>
 
                 <div class="caixaficha">
                     <label>Bimestre 3</label>
-                    <input class="input" type="number" name="serief" id="bimestre3">
+                    <input class="input" type="number" id="bimestre3">
                 </div>
 
                 <div class="caixaficha">
                     <label>Bimestre 4</label>
-                    <input class="input" type="number" name="serief" id="bimestre4">
+                    <input class="input" type="number" id="bimestre4">
                 </div>
 
                 <div class="caixaficha">
-                    <label>Media</label>
-                    <input class="input" type="number" name="serief" id="media">
+                    <label>Média</label>
+                    <input class="input" type="number" id="media">
                 </div>
 
                 <div>
@@ -108,35 +130,92 @@
             </div>
         </div>
 
-        <div id="Relatorio">
-            <div>
-                <p>Nome Completo</p>
-                <p></p>
+        <div id="contRelatorio">
+            <h1>Relatório</h1>
+            <div class="relatório">
+                <div>
+                    <p>Nome Completo</p>
+                    <p id="nomeR"></p>
+                </div>
+
+                <div>
+                    <p>Série</p>
+                    <p id="serieR"></p>
+                </div>
+
+                <div>
+                    <p>Matéria</p>
+                    <p id="materiaR"></p>
+                </div>
+
+                <div>
+                    <p>B1</p>
+                    <p id="b1R"></p>
+                </div>
+
+                <div>
+                    <p>B2</p>
+                    <p id="b2R"></p>
+                </div>
+
+                <div>
+                    <p>B3</p>
+                    <p id="b3R"></p>
+                </div>
+
+                <div>
+                    <p>B4</p>
+                    <p id="b4R"></p>
+                </div>
+
+                <div>
+                    <p>Média</p>
+                    <p id="mediaR"></p>
+                </div>
+
+                <div>
+                    <p>Resultado</p>
+                    <p id="resultadoR"></p>
+                </div>
             </div>
         </div>
     </div>
 
     <script>
-        function salvamento(tipo){
+        function calculo(tipo) {
             if (tipo == 1) {
                 let salvar = window.document.getElementById('btn');
                 let nome = document.getElementById('nome').value;
                 let serie = document.getElementById('serie').value;
-                let materia = document.getElementById('assunto').value;
-                let b1 = document.getElementById('bimestre1').value;
-                let b2 = document.getElementById('bimestre2').value;
-                let b3 = document.getElementById('bimestre3').value;
-                let b4 = document.getElementById('bimestre4').value;
-                var media = (b1 + b2 + b3 + b4)/4
+                let materia = document.getElementById('materia');
+                let b1 = parseFloat(document.getElementById('bimestre1').value) || 0;
+                let b2 = parseFloat(document.getElementById('bimestre2').value) || 0;
+                let b3 = parseFloat(document.getElementById('bimestre3').value || 0);
+                let b4 = parseFloat(document.getElementById('bimestre4').value) || 0;
+                var media = (b1 + b2 + b3 + b4) / 4
 
-                document.getElementById('nomeR').value = nome
-                document.getElementById('idadeR').value = idade
-                document.getElementById('assuntoR').value = salario
-                document.getElementById('b1R').value = b1
-                document.getElementById('b2R').value = b2
-                document.getElementById('b3R').value = b3
-                document.getElementById('b4R').value = b4
-            }}
+                document.getElementById('nomeR').innerText = nome
+                document.getElementById('serieR').innerText = serie
+                document.getElementById('materiaR').innerHTML = materia.value
+                document.getElementById('b1R').innerText = b1
+                document.getElementById('b2R').innerText = b2
+                document.getElementById('b3R').innerText = b3
+                document.getElementById('b4R').innerText = b4
+                document.getElementById("media").value = media
+                document.getElementById("mediaR").innerText = media
+
+                if (media >=7){
+                    resultadoR.innerText = "Aprovado"
+                }
+                else{
+                    resultadoR.innerText = "Reprovado"
+                }
+
+                if (nome || seie || materia || bimestre1 || bimestre2 || bimestre3 || bimestre4 != ""){
+                    window.alert('Assine todas as colunas para proseguirmos com a operação')
+                }
+            }
+        }
     </script>
 </body>
 
