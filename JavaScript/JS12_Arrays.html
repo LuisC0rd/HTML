@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <h1>Arrays</h1>
+    <p>É uma coleção/lista de dados indexados, ou seja, informações sequênciais sempre começando em 0.</p>
+
+    <script>
+        let massas = ['Pizza', 'Raviole', 'Coxinha', 'Canelone']
+        let fruta = new Array(['Kiwi', 'Figo', 'Manga', 'banana'])
+
+        // console.log(massa)
+        // massas.push("Espaguete") //Inclui um item ao final da lista.
+        // massas[massas.length-1]//Busca o último item adicionado.
+
+        let herois = [];
+
+        herois[0] = "Batman";
+        herois[1] = "Hulk";
+        herois[2] = "Homem de ferro";
+        herois[3] = "Thor";
+
+        console.log("O "+herois[1]+" almoça "+massas[3]+" e come "+fruta[4]+" como sobremesa.")
+
+        // sort() - Método/função que ordena o conteudo do array
+        let massasOrdenadas = massas.sort()
+        console.log(massasOrdenadas)
+        console.log(fruta.sort())
+
+        //indexOf() = Método/função que retorna o índice do elemento.
+        console.log("Indice de Pizza "+massas.indexOf("Pizzas"))
+
+        //reverse() = Método/função que ordena (ao contrário) a lista.
+        console.log(massas.reverse())
+
+        let coisas = [10, "Luana", new Date, herois[2], "<h2>Olá mundo.</h2>"]
+        console.log(coisas)
+
+        //Matriz
+        let programas = [
+            //0         1
+            ['Word','Excel'],            //0
+            ['Photosho','Illustrator'],  //1
+            ['VsCode','Sublime']         //2
+        ]
+        console.log("Os programas são: "+programas[2][0]+" e "+programas[1][1])
+    </script>
+</body>
+</html>

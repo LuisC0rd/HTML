@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes</title>
+</head>
+<body>
+    <h1>Fontes</h1>
+    <button onclick="aumenta()">Aumentar Fonte</button>
+    <button onclick="diminui()">Diminuir fonte</button>
+    <p id="teste01">Ola mundo</p>
+    
+    <script>
+        let fonte = 16;
+
+        function aumenta(){
+            fonte += 2; //fonte = fonte + 2
+            document.getElementById("teste01").style.fontSize = fonte + "px"
+        }
+
+        function diminui(){
+            fonte -= 2; //fonte = fonte + 2
+            document.getElementById("teste01").style.fontSize = fonte + "px"
+        }
+    </script>
+</body>
+</html>
