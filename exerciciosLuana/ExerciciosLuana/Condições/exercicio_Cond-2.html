@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionais 2</title>
+</head>
+<body>
+    <script>
+        let palindromo = prompt("Digite uma palavra: ")
+        let reverter = palindromo.split('').reverse().join('')
+        let resultado;
+        
+
+        switch (palindromo === reverter) {
+            case true:
+                resultado = "é um palindromo."
+                break;
+            case false:
+                resultado = "não é um palindromo."
+                break;
+        }
+
+        alert("A palavra digitada " +resultado);
+    </script>
+</body>
+</html>
