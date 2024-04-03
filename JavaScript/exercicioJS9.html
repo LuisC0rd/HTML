@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio contador</title>
+</head>
+
+<body>
+    <div>
+        <div>
+            <h1>Contador</h1>
+            <div id="zero">0</div>
+        </div>
+        <div>
+            <button onclick="btn(1)">Decrementar</button>
+            <button onclick="btn(2)">Resetar</button>
+            <button onclick="btn(3)">Aumentar</button>
+        </div>
+    </div>
+
+    <script>
+        function zero(tipo){
+            let num = document.getElementById("zero")
+            num = 0
+
+            if(tipo == 1){
+                num++
+            }
+        }
+
+        // const num = document.getElementById("zero")
+        // const decrement = document.getElementById("decrementar")
+        // const reset = document.getElementById("resetar")
+        // const aument = document.getElementById("aumentar")
+
+        // let zero = 0;
+
+        // function aument(){
+        //     zero++;
+        // }
+        
+        // function decrement(){
+        //     zero--;
+        // }
+
+        // aument.addEventListener('click', aumentar)
+
+
+    </script>
+</body>
+
+</html>
