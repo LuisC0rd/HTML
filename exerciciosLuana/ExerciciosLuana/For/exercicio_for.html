@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for</title>
+</head>
+
+<body>
+    <script>
+        /////
+        //exercicio 1
+        function calcularMedia(numeros) {
+            let soma = 0;
+            for (let i = 0; i < numeros.length; i++) {
+                soma += numeros[i];
+            }
+            return soma / numeros.length;
+        }
+
+        let numeros = [10, 20, 30, 40, 50];
+        console.log("A média dos números é:", calcularMedia(numeros));
+
+        /////
+        //exercicio 2
+
+        for (let i = 10; i >= 1; i--) {
+            console.log(i);
+        }
+        //////////
+        //Exercicio 3 
+        for (let i = 1; i <= 5; i++) {
+            console.log(i);
+        }
+        //////
+        //exercicio 4
+        function calcularFatorial(numero) {
+            let fatorial = 1;
+            for (let i = 2; i <= numero; i++) {
+                fatorial *= i;
+            }
+            return fatorial;
+        }
+
+        let numero = 5;
+        console.log("O fatorial de", numero, "é", calcularFatorial(numero));
+        ///////
+        //exercico 5 
+        for (let i = 2; i <= 20; i += 2) {
+            console.log(i);
+        }
+        /////
+        //exercicio 6
+
+        let soma = 0;
+        for (let i = 1; i <= 10; i++) {
+            soma += i;
+        }
+        console.log("A soma dos primeiros 10 números naturais é:", soma);
+
+    </script>
+</body>
+
+</html>

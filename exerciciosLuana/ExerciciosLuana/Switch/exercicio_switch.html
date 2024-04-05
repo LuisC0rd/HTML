@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch</title>
+</head>
+
+<body>
+    <script>
+        //exercicio 1
+        function verificarStatusPedido(codigo) {
+            let status;
+            switch (codigo) {
+                case "AP":
+                    status = "Aguardando pagamento";
+                    break;
+                case "PR":
+                    status = "Produção";
+                    break;
+                case "EN":
+                    status = "Enviado";
+                    break;
+                case "ET":
+                    status = "Entregue";
+                    break;
+                default:
+                    status = "Código inválido";
+            }
+            return status;
+        }
+
+        let codigoPedido = "EN";
+        console.log("O status do pedido é:", verificarStatusPedido(codigoPedido));
+
+        //exercicio 2
+        function verificarTipoTriangulo(lado1, lado2, lado3) {
+            let tipo;
+            if (lado1 === lado2 && lado2 === lado3) {
+                tipo = "Equilátero";
+            } else if (lado1 === lado2 || lado1 === lado3 || lado2 === lado3) {
+                tipo = "Isósceles";
+            } else {
+                tipo = "Escaleno";
+            }
+            return tipo;
+        }
+
+        console.log("O tipo de triângulo é:", verificarTipoTriangulo(5, 5, 5));
+
+        //exercicio 3
+
+        function verificarDiaSemana(numero) {
+            let dia;
+            switch (numero) {
+                case 1:
+                    dia = "Domingo";
+                    break;
+                case 2:
+                    dia = "Segunda-feira";
+                    break;
+                case 3:
+                    dia = "Terça-feira";
+                    break;
+                case 4:
+                    dia = "Quarta-feira";
+                    break;
+                case 5:
+                    dia = "Quinta-feira";
+                    break;
+                case 6:
+                    dia = "Sexta-feira";
+                    break;
+                case 7:
+                    dia = "Sábado";
+                    break;
+                default:
+                    dia = "Número inválido";
+            }
+            return dia;
+        }
+
+        console.log("O dia da semana é:", verificarDiaSemana(3));
+
+        //exercicio 4
+        function converterNumeroParaNome(numero) {
+            let nome;
+            switch (numero) {
+                case 1:
+                    nome = "Um";
+                    break;
+                case 2:
+                    nome = "Dois";
+                    break;
+                case 3:
+                    nome = "Três";
+                    break;
+                case 4:
+                    nome = "Quatro";
+                    break;
+                case 5:
+                    nome = "Cinco";
+                    break;
+                default:
+                    nome = "Número não suportado";
+            }
+            return nome;
+        }
+
+        console.log("O número em seu nome correspondente é:", converterNumeroParaNome(3));
+
+        //exercicio 5
+        function verificarOperacaoMatematica(operador) {
+            let tipo;
+            switch (operador) {
+                case "+":
+                    tipo = "Adição";
+                    break;
+                case "-":
+                    tipo = "Subtração";
+                    break;
+                case "*":
+                    tipo = "Multiplicação";
+                    break;
+                case "/":
+                    tipo = "Divisão";
+                    break;
+                default:
+                    tipo = "Operador inválido";
+            }
+            return tipo;
+        }
+
+        console.log("O tipo de operação é:", verificarOperacaoMatematica("+"));
+
+        //exercicio 6
+        function verificarMesAno(numero) {
+            let mes;
+            switch (numero) {
+                case 1:
+                    mes = "Janeiro";
+                    break;
+                case 2:
+                    mes = "Fevereiro";
+                    break;
+                case 3:
+                    mes = "Março";
+                    break;
+                case 4:
+                    mes = "Abril";
+                    break;
+                case 5:
+                    mes = "Maio";
+                    break;
+                case 6:
+                    mes = "Junho";
+                    break;
+                case 7:
+                    mes = "Julho";
+                    break;
+                case 8:
+                    mes = "Agosto";
+                    break;
+                case 9:
+                    mes = "Setembro";
+                    break;
+                case 10:
+                    mes = "Outubro";
+                    break;
+                case 11:
+                    mes = "Novembro";
+                    break;
+                case 12:
+                    mes = "Dezembro";
+                    break;
+                default:
+                    mes = "Número inválido";
+            }
+            return mes;
+        }
+
+        console.log("O mês do ano é:", verificarMesAno(3));
+
+    </script>
+</body>
+
+</html>

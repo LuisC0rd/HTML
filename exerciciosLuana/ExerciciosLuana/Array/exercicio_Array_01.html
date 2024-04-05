@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Array 1</title>
+</head>
+
+<body>
+    <script>
+        let num = [];
+        let numPares = contarPares(num)
+
+        num[0] = Number(prompt("Digite um número:"))
+        num[1] = Number(prompt("Digite outro número:"))
+        num[2] = Number(prompt("Digite outro número:"))
+        num[3] = (num[0] + num[1] + num[2]) / 3
+        num[4] = window.prompt("Informe qual elemento na array deseja que seja informado: ")
+        
+
+        if (num[0] > num[1] && num[0] > num[2]) {
+            console.log("Exercicio 1:" + num[0] + " é o maior número.")
+        }
+
+        if (num[1] > num[0] && num[1] > num[2]) {
+            console.log("Exercicio 1:" + num[1] + " é o maior número.")
+        }
+
+        if (num[2] > num[1] && num[2] > num[0]) {
+            console.log("Exercicio 1:" + num[2] + " é o maior número.")
+        }
+
+        //exercicio 2
+        console.log("Exercicio 2: A média é " + num[3])
+
+        //Exercicio 3
+
+        if (num[4] == 0) {
+            console.log("Exercicio 3: Esse elemento é o: 'num[0] = Digite um número:'.")
+        }
+
+        if (num[4] == 1) {
+            console.log("Exercicio 3: Esse elemento é o: 'num[1] = Digite outro número:'.")
+        }
+
+        if (num[4] == 2) {
+            console.log("Exercicio 3: Esse elemento é o:'num[2] = Digite outro número:'.")
+        }
+
+        if (num[4] == 3) {
+            console.log("Exercicio 3: Esse elemento é o: 'num[3] = (num[0] + num[1] + num[2]) / 3'.")
+        }
+
+        if (num[4] == 4) {
+            console.log("Exercicio 3: Esse elemento é o:'num[4] = Informe qual elemento na array deseja que seja informado.'.")
+        }
+
+        //exercicio 4
+        function contarPares(arr) {
+             let count = 0;
+            for (let i = 0; i < arr.length; i++) {
+               if (arr[i] % 2 === 0) {
+                 count++;
+                }
+            }
+            return count;
+         }
+         console.log("Exercicio 4: Número de elementos pares:", numPares);
+         
+        //exercicio 5
+
+        let num1 = [1, 2, 3];
+        let num2 = [4, 5, 6];
+
+        let newNum = num1.concat(num2);
+        console.log(newNum);
+    </script>
+</body>
+
+</html>

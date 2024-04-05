@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>do while</title>
+</head>
+
+<body>
+    <script>
+        //exercicio 1
+        let i = 1;
+        do {
+            console.log(i);
+            i++;
+        } while (i <= 5);
+
+        //exercicio 2
+        function calcularFatorial(numero) {
+            let resultado = 1;
+            let i = 1;
+            do {
+                resultado *= i;
+                i++;
+            } while (i <= numero);
+            return resultado;
+        }
+
+        console.log("O fatorial de 5 é:", calcularFatorial(5));
+
+        //exercicio 3
+        let num = 2;
+        do {
+            console.log(num);
+            num += 2;
+        } while (num <= 10);
+
+        //exxercicio 4
+        let soma = 0;
+        let num1 = 1;
+        do {
+            soma += num1;
+            num1++;
+        } while (num1 <= 10);
+        console.log("A soma dos primeiros 10 números naturais é:", soma);
+
+        //exercicio 5
+        let fibonacci = [0, 1];
+        let i1 = 2;
+        do {
+            let proximo = fibonacci[i1 - 1] + fibonacci[i1 - 2];
+            fibonacci.push(proximo);
+            i1++;
+        } while (i1 < 10);
+        console.log("A sequência de Fibonacci é:", fibonacci);
+
+    </script>
+</body>
+
+</html>
